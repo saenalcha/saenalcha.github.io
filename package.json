@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "https://saenalcha.github.io/test",
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -b deploy",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
