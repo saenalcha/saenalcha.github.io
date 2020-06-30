@@ -7,4 +7,5 @@
 module.exports = {
   /* Your site config here */
   plugins: [],
+  pathPrefix: "/https://saenalcha.github.io"
 }
