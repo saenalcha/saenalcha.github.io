@@ -4,23 +4,18 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    'airbnb-typescript',
-  ],
-  parser: '@typescript-eslint/parser',
+  extends: ["airbnb-typescript"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: './tsconfig.json',
+    project: "./tsconfig.json",
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: 'module',
+    sourceType: "module",
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
+  plugins: ["react", "@typescript-eslint"],
   rules: {
-    "semi": "off",
+    semi: "off",
   },
 };
