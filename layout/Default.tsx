@@ -1,13 +1,24 @@
 import React from "react";
 import { useRouter } from 'next/router'
 import Link from "next/link";
+import Head from "next/head";
 import styled from '@emotion/styled'
 
 const DefaultLayout = ({ children }) => {
   const router = useRouter()
-
+  const m2 = {
+    margin: '24px'
+  }
+  const Layout = styled.div`
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.5rem;
+  `
   const Nav = styled.nav`
-    margin: 20px;
+    ${m2}
+  `
+  const Container = styled.div`
+    ${m2}
   `
   const Linker = ({ href, name }) => {
     const Anchor = styled.a`
@@ -23,7 +34,11 @@ const DefaultLayout = ({ children }) => {
   }
 
   return (
-    <div>
+    <Layout>
+      <Head>
+        <title>saenal cha. tech blog</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Nav>
         <Linker
           name={"home"}
@@ -33,9 +48,15 @@ const DefaultLayout = ({ children }) => {
           name={"about"}
           href={"/about"}
         />
+        <Linker
+          name={"posts"}
+          href={"/posts"}
+        />
       </Nav>
-      {children}
-    </div>
+      <Container>
+        {children}
+      </Container>
+    </Layout>
   );
 };
 
