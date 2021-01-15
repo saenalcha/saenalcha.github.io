@@ -20,7 +20,7 @@ const Posts = () => {
                 해결책:
               </p>
               <p>
-                <code>
+                <code className='block'>
                   <p>
                     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY [password];
                   </p>
