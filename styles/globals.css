@@ -15,3 +15,17 @@ a {
 * {
   box-sizing: border-box;
 }
+samp {
+  background: #fafafa;
+  padding: 0.75rem;
+  display: block;
+  border-radius: 5px;
+}
+code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+}
+code.block {
+  display: block;
+}
