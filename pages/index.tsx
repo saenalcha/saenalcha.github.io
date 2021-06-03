@@ -48,6 +48,7 @@ export async function getStaticProps() {
       const rawContent = fs.readFileSync(path, {
         encoding: "utf-8",
       });
+
       const { data } = matter(rawContent);
 
       return { ...data, id: uuid() };

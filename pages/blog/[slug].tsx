@@ -2,6 +2,7 @@ import React from "react";
 import html from "remark-html"
 import fs from "fs"
 import highlight from "remark-highlight.js"
+import 'highlight.js/styles/atom-one-dark.css';
 import unified from "unified"
 import markdown from "remark-parse"
 import matter from "gray-matter"
